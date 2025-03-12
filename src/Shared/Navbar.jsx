@@ -1,13 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import { toast } from "react-toastify";
-import { GiModernCity } from "react-icons/gi";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
-  const navigate = useNavigate();
-
   // Try to get the theme from localStorage if available, otherwise default to 'light'
   const [theme, setTheme] = React.useState(() => {
     return localStorage.getItem("theme") || "light";
@@ -23,34 +21,48 @@ const Navbar = () => {
     document.querySelector("html").setAttribute("data-theme", theme);
   }, [theme]);
 
-  const linkClass = ({ isActive }) =>
-    isActive
-      ? " p-2 text-pink-700 rounded-lg hover:bg-transparent font-bold text-lg"
-      : " p-2 rounded-lg hover:bg-transparent hover:text-pink-500 hover:bg-pink-300 font-bold text-lg text-black";
+  const commonClass =
+    "p-2 rounded-lg hover:bg-transparent hover:text-pink-500 hover:bg-pink-300 font-bold text-lg text-black cursor-pointer";
 
   const links = (
     <>
-      <NavLink to="/" className={linkClass}>
+      <NavLink to="/" className={commonClass}>
         Home
       </NavLink>
-      <NavLink href="#Choose" className={linkClass}>
-        Choose
-      </NavLink>
-      <NavLink to="/faq" className={linkClass}>
+      <ScrollLink
+        to="Choose"
+        smooth={true}
+        duration={800}
+        className={commonClass}
+      >
         Skills
-      </NavLink>
-      <NavLink to="/faq" className={linkClass}>
+      </ScrollLink>
+      <ScrollLink
+        to="Choose"
+        smooth={true}
+        duration={800}
+        className={commonClass}
+      >
         Education
-      </NavLink>
-      <NavLink to="/faq" className={linkClass}>
+      </ScrollLink>
+      <ScrollLink
+        to="Choose"
+        smooth={true}
+        duration={800}
+        className={commonClass}
+      >
         Project
-      </NavLink>
-      <NavLink to="/faq" className={linkClass}>
+      </ScrollLink>
+      <ScrollLink
+        to="Choose"
+        smooth={true}
+        duration={800}
+        className={commonClass}
+      >
         Contact
-      </NavLink>
+      </ScrollLink>
     </>
   );
-
 
   return (
     <nav className="bg-pink-200">
@@ -118,21 +130,20 @@ const Navbar = () => {
               {links}
 
               <div className="mb-2">
-                  <button
-                    className="btn text-black btn-neutral w-full bg-pink-500 rounded-lg border-none hover:bg-pink-700"
-                    data-tooltip-id="my-tooltip"
-                    data-tooltip-content={"You Can Logout"}
-                    data-tooltip-place="top"
-                  >
-                    Logout
-                  </button>
+                <button
+                  className="btn text-black btn-neutral w-full bg-pink-500 rounded-lg border-none hover:bg-pink-700"
+                  data-tooltip-id="my-tooltip"
+                  data-tooltip-content={"Download Resume When This Prepared"}
+                  data-tooltip-place="top"
+                >
+                  Resume
+                </button>
               </div>
             </div>
           </div>
-          <Link to="/" className="flex justify-center items-center gap-2">
-            <GiModernCity className="text-xl md:text-2xl text-pink-600"></GiModernCity>
+          <Link to="/" className="">
             <span className="text-xl md:text-2xl text-pink-600 font-semibold">
-              EstateLink
+              Portfolio
             </span>
           </Link>
         </div>
@@ -179,23 +190,18 @@ const Navbar = () => {
 
         {/* End Section */}
         <div className="navbar-end ">
-          <div className="dropdown">
-            <div tabIndex={0} role="" className="m-1">
-              <button>image</button>
-            </div>
-          </div>
+          
 
           <div className="hidden lg:ml-2 lg:flex lg:items-center lg:gap-3">
             <div>
-                <button
-                  className="btn btn-neutral bg-pink-500 rounded-lg border-none text-black hover:bg-pink-700"
-                  data-tooltip-id="my-tooltip"
-                  data-tooltip-content={"You Can Logout"}
-                  data-tooltip-place="top"
-                >
-                  Logout
-                </button>
-              
+              <button
+                className="btn btn-neutral bg-pink-500 rounded-lg border-none text-black hover:bg-pink-700"
+                data-tooltip-id="my-tooltip"
+                data-tooltip-content={"Download Resume When This is Prepared"}
+                data-tooltip-place="top"
+              >
+                Resume
+              </button>
             </div>
           </div>
         </div>
