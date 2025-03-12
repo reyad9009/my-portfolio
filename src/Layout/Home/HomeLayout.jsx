@@ -5,6 +5,7 @@ import Choose from './Choose';
 import Slider from './Slider';
 import Introduction from './Introduction';
 import AboutMe from './AboutMe';
+import Skills from './Skills';
 
 const HomeLayout = () => {
     return (
@@ -16,6 +17,8 @@ const HomeLayout = () => {
             <Introduction></Introduction>
 
             <AboutMe></AboutMe>
+
+            <Skills></Skills>
             {/* <Slider></Slider> */}
             <AboutUs></AboutUs>
             <Choose></Choose>

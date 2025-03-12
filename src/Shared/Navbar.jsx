@@ -30,7 +30,15 @@ const Navbar = () => {
         Home
       </NavLink>
       <ScrollLink
-        to="Choose"
+        to="About"
+        smooth={true}
+        duration={800}
+        className={commonClass}
+      >
+        About
+      </ScrollLink>
+      <ScrollLink
+        to="skills"
         smooth={true}
         duration={800}
         className={commonClass}
