@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import AboutUs from './AboutUs';
 import Choose from './Choose';
 import Slider from './Slider';
+import Introduction from './Introduction';
+import AboutMe from './AboutMe';
 
 const HomeLayout = () => {
     return (
@@ -11,7 +13,10 @@ const HomeLayout = () => {
                 <title>Home | EstateLink</title>
             </Helmet>
             
-            <Slider></Slider>
+            <Introduction></Introduction>
+
+            <AboutMe></AboutMe>
+            {/* <Slider></Slider> */}
             <AboutUs></AboutUs>
             <Choose></Choose>
             
