@@ -16,10 +16,13 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
+
+    // Send email logic can be added here (e.g., using emailjs or an API)
+    
     setFormData({ name: "", email: "", message: "" });
 
     navigate("/");
-    
+
     Swal.fire({
       title: "Message Sent!",
       text: "Thank you for reaching out. We will get back to you soon!",
@@ -30,7 +33,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container mx-auto flex items-center justify-center px-6 py-16">
+    <div id="contact" className="flex items-center justify-center px-6 py-16">
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }} 
         animate={{ opacity: 1, scale: 1 }} 
@@ -39,7 +42,9 @@ const ContactUs = () => {
       >
         <div className="md:w-1/2 flex flex-col justify-center text-center md:text-left p-6">
           <h2 className="text-5xl font-bold text-pink-500 mb-4">Get in Touch</h2>
-          <p className="bg-base-100 p-2 rounded-lg text-lg">We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
+          <p className="p-2 rounded-lg text-lg">We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
+          <p className="mt-4 text-lg">Email: <a href="mailto:gm.mortuja.111@gmail.com" className="text-blue-600">gm.mortuja.111@gmail.com</a></p>
+          <p className="mt-2 text-lg">Phone: <a href="tel:+8801571416973" className="text-blue-600">+8801571416973</a></p>
         </div>
         
         <div className="md:w-1/2 p-6 rounded-lg bg-gradient-to-br from-purple-300 to-orange-400">

@@ -4,8 +4,9 @@ import {
 import MainLayout from "../Layout/MainLayout";
 import HomeLayout from "../Layout/Home/HomeLayout";
 import ErrorPage from "../Shared/ErrorPage";
-import FAQ from "../Layout/Home/FAQ";
-import ContactUs from "../Pages/ContactUs";
+import FirstDetails from "../Pages/FirstDetails";
+import SecondDetails from "../Pages/SecondDetails";
+import ThirdDetails from "../Pages/ThirdDetails";
 
 
 
@@ -21,12 +22,16 @@ export const router = createBrowserRouter([
                 element: <HomeLayout></HomeLayout>,
             },
             {
-                path: '/faq',
-                element: <FAQ></FAQ> ,
+                path: '/project/01',
+                element: <FirstDetails></FirstDetails> ,
             },
             {
-                path: '/contact-us',
-                element: <ContactUs></ContactUs> ,
+                path: '/project/02',
+                element: <SecondDetails></SecondDetails> ,
+            },
+            {
+                path: '/project/03',
+                element: <ThirdDetails></ThirdDetails> ,
             },
         ]
     },

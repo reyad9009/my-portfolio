@@ -46,7 +46,7 @@ const Navbar = () => {
         Skills
       </ScrollLink>
       <ScrollLink
-        to="Choose"
+        to="Education"
         smooth={true}
         duration={800}
         className={commonClass}
@@ -54,7 +54,7 @@ const Navbar = () => {
         Education
       </ScrollLink>
       <ScrollLink
-        to="Choose"
+        to="projects"
         smooth={true}
         duration={800}
         className={commonClass}
@@ -62,7 +62,7 @@ const Navbar = () => {
         Project
       </ScrollLink>
       <ScrollLink
-        to="Choose"
+        to="contact"
         smooth={true}
         duration={800}
         className={commonClass}
