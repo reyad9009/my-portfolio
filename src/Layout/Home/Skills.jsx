@@ -1,12 +1,12 @@
 import React from "react";
-import react from "../../assets/react.png";
-import mongodb from "../../assets/mongodb.png";
-import express from "../../assets/express.png";
-import firebase from "../../assets/firebase.png";
-import html from "../../assets/html.png";
-import css from "../../assets/css.jpeg";
-import tailwind from "../../assets/tailwind.jpeg";
-import js from "../../assets/js.png";
+import react from "../../assets/react.svg";
+import mongodb from "../../assets/mongodb.svg";
+import express from "../../assets/expressjs.svg";
+import firebase from "../../assets/firebase.svg";
+import html from "../../assets/html.svg";
+import css from "../../assets/css.svg";
+import tailwind from "../../assets/Tailwind .svg";
+import js from "../../assets/js.svg";
 
 const Skills = () => {
   const skills = [
@@ -27,7 +27,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col items-center  p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src={skill.img}

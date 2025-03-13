@@ -1,34 +1,27 @@
-import React from 'react';
-import { Outlet, useLocation, useNavigation } from 'react-router-dom';
-import Loading from '../Shared/Loading';
-import Navbar from '../Shared/Navbar';
-import Footer from '../Shared/Footer';
+import React from "react";
+import { Outlet, useNavigation } from "react-router-dom";
+import Loading from "../Shared/Loading";
+import Navbar from "../Shared/Navbar";
+import Footer from "../Shared/Footer";
 
 const MainLayout = () => {
+  const navigation = useNavigation();
 
-    const location = useLocation();
-    const navigation = useNavigation();
+  return (
+    <div>
+      <Navbar></Navbar>
 
-    const noHeaderFooter = location.pathname.includes('/login') || location.pathname.includes('/signup');
+      {navigation.state === "loading" ? (
+        <Loading></Loading>
+      ) : (
+        <main className="w-11/12 mx-auto">
+          <Outlet></Outlet>
+        </main>
+      )}
 
-
-    return (
-        <div>
-            {noHeaderFooter || <Navbar></Navbar>}
-
-            {
-                navigation.state === 'loading' ?
-                    <Loading></Loading>
-                    :
-                    <main className='w-11/12 mx-auto'>
-                        <Outlet></Outlet>
-                    </main>
-            }
-
-            {noHeaderFooter || <Footer></Footer>}
-
-        </div>
-    );
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default MainLayout;

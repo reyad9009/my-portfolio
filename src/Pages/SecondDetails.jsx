@@ -4,14 +4,14 @@ import { IoMdArrowForward } from "react-icons/io";
 
 const SecondDetails = () => {
   return (
-    <div className="max-w-7xl mx-auto p-8">
+    <div className="w-11/12 mx-auto p-8">
       {/* Project Title */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-900">Language Exchange - Learn Language in a Friendly Atmosphere</h1>
+        <h1 className="text-4xl font-bold">Language Exchange - Learn Language in a Friendly Atmosphere</h1>
       </div>
 
       {/* Main Technology Stack */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Main Technology Stack Used</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><strong>Frontend:</strong> React, React Router, Tailwind CSS, DaisyUI, React Awesome Reveal, React Tooltip</li>
@@ -22,7 +22,7 @@ const SecondDetails = () => {
       </div>
 
       {/* Brief Description */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Brief Description</h2>
         <p className="mt-4 text-gray-700">
           Language Exchange is an online tutor booking platform designed to connect users with tutors from various languages and subjects.
@@ -34,7 +34,7 @@ const SecondDetails = () => {
 
       {/* Live Project Link */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800">Live Project Link</h2>
+        <h2 className="text-xl font-semibold">Live Project Link:-</h2>
         <a href="https://lingua-connect.netlify.app" className="text-blue-500 flex items-center mt-4">
           <FaLink className="mr-2" />
           View Live Project
@@ -43,7 +43,7 @@ const SecondDetails = () => {
 
       {/* GitHub Repository Link */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800">GitHub Repository Link (Client)</h2>
+        <h2 className="text-xl font-semibold">GitHub Repository Link (Client):-</h2>
         <a href="https://github.com/pgrmrmortuja/language-exchange-client" className="text-blue-500 flex items-center mt-4">
           <FaGithub className="mr-2" />
           View GitHub Repository
@@ -51,7 +51,7 @@ const SecondDetails = () => {
       </div>
 
       {/* Challenges Faced */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Challenges Faced While Developing the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><IoMdArrowForward className="inline mr-2" />Complex Authentication: Implementing secure authentication with Firebase, managing JWT tokens, and ensuring private routes worked seamlessly across different pages proved to be challenging.</li>
@@ -62,7 +62,7 @@ const SecondDetails = () => {
       </div>
 
       {/* Potential Improvements */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold text-gray-800">Potential Improvements and Future Plans</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><IoMdArrowForward className="inline mr-2" />Pagination: Implement pagination for the tutor listing to improve the user experience, especially when dealing with large amounts of tutor data.</li>

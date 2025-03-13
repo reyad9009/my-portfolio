@@ -26,9 +26,9 @@ const projects = [
 
 const ProjectSection = () => {
   return (
-    <section id="projects" className="py-12 bg-gray-100">
+    <section id="projects" className="py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+        <h2 className="text-3xl font-bold text-center mb-8">
           My Projects
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -48,7 +48,7 @@ const ProjectSection = () => {
                 </h3>
                 <Link
                   to={project.link}
-                  className="mt-3 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition w-full text-center"
+                  className="mt-3 inline-block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition w-full text-center"
                 >
                   View More
                 </Link>

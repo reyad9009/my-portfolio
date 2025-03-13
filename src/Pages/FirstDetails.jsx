@@ -4,14 +4,14 @@ import { IoMdArrowForward } from "react-icons/io";
 
 const FirstDetails = () => {
   return (
-    <div className="max-w-7xl mx-auto p-8">
+    <div className="w-11/12 mx-auto p-8">
       {/* Project Title */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-900">EstateLink - A Real Estate Platform</h1>
+        <h1 className="text-4xl font-bold">EstateLink - A Real Estate Platform</h1>
       </div>
 
       {/* Main Technology Stack */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Main Technology Stack Used</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><strong>Frontend:</strong> React, Tailwind CSS, React Router, Axios, TanStack Query</li>
@@ -22,7 +22,7 @@ const FirstDetails = () => {
       </div>
 
       {/* Brief Description */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Brief Description</h2>
         <p className="mt-4 text-gray-700">
           EstateLink is a comprehensive real estate platform designed to cater to three user roles: Admin, Agent, and User. The platform allows users to browse and purchase properties, leave reviews, and manage wishlists. Agents can add and manage their property listings, while admins oversee the overall platform management, including users, properties, and reviews. EstateLink integrates seamless authentication with Firebase Authentication and employs a modern tech stack to ensure a dynamic and responsive experience.
@@ -31,7 +31,7 @@ const FirstDetails = () => {
 
       {/* Live Project Link */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800">Live Project Link</h2>
+        <h2 className="text-xl font-semibold">Live Project Link:-</h2>
         <a href="https://estatelink.netlify.app" className="text-blue-500 flex items-center mt-4">
           <FaLink className="mr-2" />
           Visit the Live Project
@@ -40,7 +40,7 @@ const FirstDetails = () => {
 
       {/* GitHub Repository Link */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800">GitHub Repository (Client-side)</h2>
+        <h2 className="text-xl font-semibold">GitHub Repository (Client-side):-</h2>
         <a href="https://github.com/pgrmrmortuja/estate-link-client" className="text-blue-500 flex items-center mt-4">
           <FaGithub className="mr-2" />
           View on GitHub
@@ -48,7 +48,7 @@ const FirstDetails = () => {
       </div>
 
       {/* Challenges Faced */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Challenges Faced While Developing the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><IoMdArrowForward className="inline mr-2" />Complex Role Management: Implementing distinct features for Admins, Agents, and Users required careful planning and dynamic rendering of components. Ensuring proper role-based access control was challenging.</li>
@@ -59,7 +59,7 @@ const FirstDetails = () => {
       </div>
 
       {/* Potential Improvements */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold text-gray-800">Potential Improvements and Future Plans for the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><IoMdArrowForward className="inline mr-2" />Search and Filter Functionality: Add advanced search and filter options to allow users to narrow down their property searches by price, location, amenities, and more.</li>

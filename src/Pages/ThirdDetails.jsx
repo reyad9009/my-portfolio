@@ -4,14 +4,14 @@ import { IoMdArrowForward } from 'react-icons/io';
 
 const ThirdDetails = () => {
   return (
-    <div className="max-w-7xl mx-auto p-8">
+    <div className="w-11/12 mx-auto p-8">
       {/* Project Title */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-900">EquiSports - A Sports Equipment Store</h1>
+        <h1 className="text-4xl font-bold">EquiSports - A Sports Equipment Store</h1>
       </div>
 
       {/* Main Technology Stack */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Main Technology Stack Used</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><strong>Frontend:</strong> React, React Router, Tailwind CSS, DaisyUI, React Awesome Reveal, React Tooltip</li>
@@ -22,7 +22,7 @@ const ThirdDetails = () => {
       </div>
 
       {/* Brief Description */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Brief Description</h2>
         <p className="mt-4 text-gray-700">
           EquiSports is a responsive e-commerce platform designed for sports enthusiasts to browse, purchase, and review a variety of sports accessories.
@@ -33,7 +33,7 @@ const ThirdDetails = () => {
 
       {/* Live Project Link */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800">Live Project Link</h2>
+        <h2 className="text-xl font-semibold">Live Project Link:-</h2>
         <a href="https://sportseqp.netlify.app" className="text-blue-500 flex items-center mt-4">
           <FaLink className="mr-2" />
           Visit the Live Project
@@ -42,7 +42,7 @@ const ThirdDetails = () => {
 
       {/* GitHub Repository Link */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800">GitHub Repository (Client-side)</h2>
+        <h2 className="text-xl font-semibold">GitHub Repository (Client-side):-</h2>
         <a href="https://github.com/pgrmrmortuja/sports-equipment-project" className="text-blue-500 flex items-center mt-4">
           <FaGithub className="mr-2" />
           View on GitHub
@@ -50,7 +50,7 @@ const ThirdDetails = () => {
       </div>
 
       {/* Challenges Faced */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Challenges Faced While Developing the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><IoMdArrowForward className="inline mr-2" />State Management: Managing user authentication state across protected routes without unnecessary redirects.</li>
@@ -61,7 +61,7 @@ const ThirdDetails = () => {
       </div>
 
       {/* Potential Improvements */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-green-200 p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold text-gray-800">Potential Improvements and Future Plans for the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><IoMdArrowForward className="inline mr-2" />Wishlist Feature: Allow users to save items for later purchases.</li>

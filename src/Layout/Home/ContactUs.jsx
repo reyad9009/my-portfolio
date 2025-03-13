@@ -17,7 +17,6 @@ const ContactUs = () => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
 
-    // Send email logic can be added here (e.g., using emailjs or an API)
     
     setFormData({ name: "", email: "", message: "" });
 
@@ -38,16 +37,16 @@ const ContactUs = () => {
         initial={{ opacity: 0, scale: 0.9 }} 
         animate={{ opacity: 1, scale: 1 }} 
         transition={{ duration: 0.5 }}
-        className="w-full p-12 rounded-3xl shadow-2xl shadow-orange-400 flex flex-col md:flex-row "
+        className="w-full p-12 rounded-3xl shadow-2xl border-2 border-green-600 flex flex-col md:flex-row "
       >
         <div className="md:w-1/2 flex flex-col justify-center text-center md:text-left p-6">
-          <h2 className="text-5xl font-bold text-pink-500 mb-4">Get in Touch</h2>
+          <h2 className="text-5xl font-bold text-green-500 mb-4">Get in Touch</h2>
           <p className="p-2 rounded-lg text-lg">We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
-          <p className="mt-4 text-lg">Email: <a href="mailto:gm.mortuja.111@gmail.com" className="text-blue-600">gm.mortuja.111@gmail.com</a></p>
-          <p className="mt-2 text-lg">Phone: <a href="tel:+8801571416973" className="text-blue-600">+8801571416973</a></p>
+          <p className="mt-4 text-lg">Email: <a href="mailto:tarekhossen105@gmail.com" className="text-blue-600">tarekhossen105@gmail.com</a></p>
+          <p className="mt-2 text-lg">Phone: <a href="tel:+8801585761668" className="text-blue-600">+8801585761668</a></p>
         </div>
         
-        <div className="md:w-1/2 p-6 rounded-lg bg-gradient-to-br from-purple-300 to-orange-400">
+        <div className="md:w-1/2 p-6 rounded-lg bg-gradient-to-br from-green-300 to-blue-400">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label className="block text-black font-semibold mb-2">Your Name</label>
@@ -89,7 +88,7 @@ const ContactUs = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-500 to-orange-600 text-white py-3 rounded-lg hover:opacity-90 transition duration-300 text-xl font-semibold shadow-md flex items-center justify-center gap-3"
+              className="w-full bg-green-600 text-white py-3 rounded-lg hover:opacity-90 transition duration-300 text-xl font-semibold shadow-md flex items-center justify-center gap-3"
             >
               <FaPaperPlane /> Send Message
             </motion.button>

@@ -1,24 +1,23 @@
 import React from "react";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
-import Photo from "../../assets/myphoto.jpg";
+import Photo from "../../assets/tarek.jpg";
 
 const Introduction = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 min-h-screen">
+    <section className="flex flex-col md:flex-row items-center justify-between  py-14">
       {/* Left Side - Introduction */}
       <div className="text-center md:text-left space-y-6">
         <h1 className="text-4xl md:text-5xl font-bold">
-          Hi, I'm <span className="text-blue-500">G. M. Mortuja</span>
+          Hi, I'm <span className="text-[#6429ef]">Tarek Rahman</span>
         </h1>
-        <p className="text-lg">
-          MERN Stack Developer | Passionate about building scalable web
-          applications
+        <p className="text-xl">
+        MERN Stack Developer | Expert in React & Modern UI | Building Scalable & Dynamic Web Solutions.
         </p>
 
         {/* Social Icons */}
         <div className="flex justify-center md:justify-start space-x-4">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/tarek-rahman-494892355/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 text-4xl hover:scale-110 transition-transform duration-200"
@@ -34,7 +33,7 @@ const Introduction = () => {
             <FaFacebook />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/reyad9009"
             target="_blank"
             rel="noopener noreferrer"
             className="text-4xl hover:scale-110 transition-transform duration-200"
@@ -43,11 +42,8 @@ const Introduction = () => {
           </a>
         </div>
 
-        {/* Download Resume Button */}
         <a
-        //   href="/resume.pdf"
-        //   download
-          className="btn inline-block px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold shadow-md"
+          className="btn font-bold text-xl text-white bg-[#9263ff] hover:text-[#6429ef] hover:bg-transparent hover:border-2"
         >
           Download Resume
         </a>
@@ -55,11 +51,31 @@ const Introduction = () => {
 
       {/* Right Side - Profile Photo */}
       <div className="mt-10 md:mt-0">
-        <img
-          src={Photo}
-          alt="G. M. Mortuja"
-          className="w-60 md:w-80 rounded-full shadow-lg border-4 border-blue-500"
-        />
+        <svg
+          id="sw-js-blob-svg"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          className="w-[500px] h-[500px]" // Tailwind size
+        >
+          <defs>
+            {/* Define the blob shape as a clip path */}
+            <clipPath id="blob-clip">
+              <path
+                d="M25.7,-25.5C33.4,-18,39.9,-9,40.1,0.2C40.3,9.4,34.3,18.8,26.6,25.5C18.8,32.1,9.4,35.9,-0.5,36.4C-10.4,36.9,-20.8,34,-26.2,27.4C-31.7,20.8,-32.2,10.4,-31.3,0.9C-30.5,-8.7,-28.2,-17.3,-22.8,-24.8C-17.3,-32.4,-8.7,-38.8,0.2,-39C9,-39.1,18,-33.1,25.7,-25.5Z"
+                transform="translate(50 50)"
+              />
+            </clipPath>
+          </defs>
+
+          {/* Image clipped inside the blob shape */}
+          <image
+            href={Photo} // Replace with your image URL
+            width="100%"
+            height="100%"
+            clipPath="url(#blob-clip)"
+          />
+        </svg>
       </div>
     </section>
   );
