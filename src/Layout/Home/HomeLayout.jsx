@@ -9,7 +9,7 @@ import ContactUs from './ContactUs';
 
 const HomeLayout = () => {
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className='w-11/12 mx-auto overflow-hidden'>
             <Helmet>
                 <title>Home | Portfolio</title>
             </Helmet>

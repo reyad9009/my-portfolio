@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
-import pF from "../../assets/project-first.jpg";
-import pS from "../../assets/project-second.jpg";
-import pT from "../../assets/project-third.jpg";
+import pF from "../../assets/project-first.png";
+import pS from "../../assets/project-second.png";
+import pT from "../../assets/project-third.png";
 
 const projects = [
   {
     id: 1,
-    name: "EstateLink - A Real Estate Platform",
+    name: "Wardiere-Inc - A Employee Management System",
     image: pF,
     link: "/project/01",
   },
   {
     id: 2,
-    name: "LinguaConnect - Learn Language Friendly",
+    name: "Fradel-and-Spies - A Restaurant Management System",
     image: pS,
     link: "/project/02",
   },
@@ -48,7 +48,7 @@ const ProjectSection = () => {
                 </h3>
                 <Link
                   to={project.link}
-                  className="mt-3 inline-block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition w-full text-center"
+                  className="mt-3 inline-block bg-[#9263ff] text-white px-4 py-2 rounded-lg hover:bg-[#6429ef] transition w-full text-center"
                 >
                   View More
                 </Link>

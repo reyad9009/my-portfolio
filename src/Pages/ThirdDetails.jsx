@@ -11,18 +11,18 @@ const ThirdDetails = () => {
       </div>
 
       {/* Main Technology Stack */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Main Technology Stack Used</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><strong>Frontend:</strong> React, React Router, Tailwind CSS, DaisyUI, React Awesome Reveal, React Tooltip</li>
           <li><strong>Backend:</strong> Node.js, Express.js, MongoDB Atlas</li>
           <li><strong>Authentication:</strong> Firebase</li>
-          <li><strong>Deployment:</strong> Netlify (Client), Vercel (Server)</li>
+          <li><strong>Deployment:</strong> Vercel (Server), Firebase (Client)</li>
         </ul>
       </div>
 
       {/* Brief Description */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Brief Description</h2>
         <p className="mt-4 text-gray-700">
           EquiSports is a responsive e-commerce platform designed for sports enthusiasts to browse, purchase, and review a variety of sports accessories.
@@ -34,7 +34,7 @@ const ThirdDetails = () => {
       {/* Live Project Link */}
       <div className="mb-8">
         <h2 className="text-xl font-semibold">Live Project Link:-</h2>
-        <a href="https://sportseqp.netlify.app" className="text-blue-500 flex items-center mt-4">
+        <a href="https://assignment-10-client-59d5b.web.app/" className="text-blue-500 flex items-center mt-4">
           <FaLink className="mr-2" />
           Visit the Live Project
         </a>
@@ -43,14 +43,14 @@ const ThirdDetails = () => {
       {/* GitHub Repository Link */}
       <div className="mb-8">
         <h2 className="text-xl font-semibold">GitHub Repository (Client-side):-</h2>
-        <a href="https://github.com/pgrmrmortuja/sports-equipment-project" className="text-blue-500 flex items-center mt-4">
+        <a href="https://github.com/reyad9009/EquiSports" className="text-blue-500 flex items-center mt-4">
           <FaGithub className="mr-2" />
           View on GitHub
         </a>
       </div>
 
       {/* Challenges Faced */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Challenges Faced While Developing the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><IoMdArrowForward className="inline mr-2" />State Management: Managing user authentication state across protected routes without unnecessary redirects.</li>
@@ -61,7 +61,7 @@ const ThirdDetails = () => {
       </div>
 
       {/* Potential Improvements */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold text-gray-800">Potential Improvements and Future Plans for the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><IoMdArrowForward className="inline mr-2" />Wishlist Feature: Allow users to save items for later purchases.</li>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -44,14 +45,6 @@ const AboutMe = () => {
             out! Let’s build something awesome and interactive with React and
             Tailwind CSS!
           </p>
-          <div className="flex space-x-4 mt-6">
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all">
-              Connect with Me
-            </button>
-            <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-all">
-              View My Projects
-            </button>
-          </div>
         </div>
       </div>
     </section>

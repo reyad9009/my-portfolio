@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="mt-4 flex gap-6">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/tarek.rahman.483355"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-blue-500 text-2xl"
@@ -22,7 +22,7 @@ const Footer = () => {
               <FaFacebook />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/tarek-rahman-494892355/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-blue-700 text-2xl"
@@ -30,7 +30,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/reyad9009"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white text-2xl"

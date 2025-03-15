@@ -7,32 +7,32 @@ const FirstDetails = () => {
     <div className="w-11/12 mx-auto p-8">
       {/* Project Title */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold">EstateLink - A Real Estate Platform</h1>
+        <h1 className="text-4xl font-bold">Wardiere-Inc - A Employee Management System</h1>
       </div>
 
       {/* Main Technology Stack */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Main Technology Stack Used</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><strong>Frontend:</strong> React, Tailwind CSS, React Router, Axios, TanStack Query</li>
           <li><strong>Backend:</strong> Express.js, MongoDB, Firebase Admin SDK</li>
           <li><strong>Authentication:</strong> Firebase Authentication</li>
-          <li><strong>Hosting:</strong> Vercel (Server), Netlify (Client)</li>
+          <li><strong>Hosting:</strong> Vercel (Server), Firebase (Client)</li>
         </ul>
       </div>
 
       {/* Brief Description */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Brief Description</h2>
         <p className="mt-4 text-gray-700">
-          EstateLink is a comprehensive real estate platform designed to cater to three user roles: Admin, Agent, and User. The platform allows users to browse and purchase properties, leave reviews, and manage wishlists. Agents can add and manage their property listings, while admins oversee the overall platform management, including users, properties, and reviews. EstateLink integrates seamless authentication with Firebase Authentication and employs a modern tech stack to ensure a dynamic and responsive experience.
+        The Employee Management System is a web application designed for a company to monitor employee workload, manage salaries, and handle HR functions efficiently. The system enables employees to log their work, allows HR executives to verify employees and process salary payments, and provides an admin panel for managing roles and payroll approvals.
         </p>
       </div>
 
       {/* Live Project Link */}
       <div className="mb-8">
         <h2 className="text-xl font-semibold">Live Project Link:-</h2>
-        <a href="https://estatelink.netlify.app" className="text-blue-500 flex items-center mt-4">
+        <a href="https://bistro-boss-fdc96.web.app/" className="text-blue-500 flex items-center mt-4">
           <FaLink className="mr-2" />
           Visit the Live Project
         </a>
@@ -41,32 +41,46 @@ const FirstDetails = () => {
       {/* GitHub Repository Link */}
       <div className="mb-8">
         <h2 className="text-xl font-semibold">GitHub Repository (Client-side):-</h2>
-        <a href="https://github.com/pgrmrmortuja/estate-link-client" className="text-blue-500 flex items-center mt-4">
+        <a href="https://github.com/reyad9009/Wardiere-Inc" className="text-blue-500 flex items-center mt-4">
           <FaGithub className="mr-2" />
           View on GitHub
         </a>
       </div>
 
       {/* Challenges Faced */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Challenges Faced While Developing the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
-          <li><IoMdArrowForward className="inline mr-2" />Complex Role Management: Implementing distinct features for Admins, Agents, and Users required careful planning and dynamic rendering of components. Ensuring proper role-based access control was challenging.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Property Listing Management: Managing a large number of properties in the backend, allowing agents to add, edit, and track listings while ensuring a seamless user experience on the front end, was a complex task.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Authentication and Authorization: Integrating Firebase Authentication to securely manage user login and roles while ensuring smooth user redirection based on roles (admin, agent, or user) was initially challenging.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Handling Async Data: Managing the data flow, especially with TanStack Query and Axios, was tricky at times, particularly with fetching large data sets efficiently.</li>
+          <li><IoMdArrowForward className="inline mr-2" />Role-Based Authentication & Authorization: Implementing different user roles (Employee, HR, Admin) with proper access control using JWT authentication and middleware was complex.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Real-Time Data Updates Without Reloading: Implementing features like updating employee status, salary payments, and work logs dynamically without page refresh was challenging.  TanStack Query helped in optimizing data fetching, but handling cache updates correctly took effort.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Secure Payment Integration:
+          Ensuring secure salary transactions and preventing duplicate payments for the same month/year required payment gateway integration and proper database validation.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Implementing CRUD Operations with UI Feedback: Making sure Create, Read, Update, and Delete (CRUD) operations worked smoothly with real-time updates and proper user notifications using SweetAlert instead of default browser alerts.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Error Handling & Validation: Implementing proper form validation for login, registration, work logs, and payments to prevent incorrect data entry. Displaying meaningful error messages instead of generic browser alerts.</li>
         </ul>
       </div>
 
       {/* Potential Improvements */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold text-gray-800">Potential Improvements and Future Plans for the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
-          <li><IoMdArrowForward className="inline mr-2" />Search and Filter Functionality: Add advanced search and filter options to allow users to narrow down their property searches by price, location, amenities, and more.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Payment Integration: Integrate a secure payment system (such as Stripe or PayPal) for property purchases to enhance the user experience.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Improved Admin Dashboard: Expand the admin dashboard to include features like analytics, property performance, and user management for better control over the platform.</li>
-          <li><IoMdArrowForward className="inline mr-2" />User Reviews and Ratings: Implement a more robust review and rating system for properties, allowing users to rate properties on different criteria (e.g., location, amenities, value for money).</li>
-          <li><IoMdArrowForward className="inline mr-2" />Mobile Optimization: Enhance the mobile responsiveness to improve user experience on smaller screens, ensuring that users can easily browse and interact with the platform on any device.</li>
+          <li><IoMdArrowForward className="inline mr-2" />Advanced Role Management:
+          Implement a Role-Based Access Control (RBAC) system with more granular permissions. Allow Admins to assign custom permissions to HRs and Employees dynamically.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Real-Time Notifications:
+          Introduce real-time notifications using WebSockets (Socket.io) or Firebase Cloud Messaging for updates like salary payments, HR approvals, and work progress.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Enhanced UI/UX Improvements: Improve the design with modern UI components from ShadCN, Flowbite, or Material Tailwind to make it more visually appealing.
+          Add dark mode for a better user experience.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Integration of Payroll System with Banks: Implement direct salary deposit by integrating with payment gateways like Stripe or PayPal. Allow employees to choose preferred payment methods.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Multi-Language Support:
+          Add support for multiple languages to make the platform accessible to a wider audience.</li>
         </ul>
       </div>
     </div>

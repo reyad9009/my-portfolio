@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import { Link, NavLink } from "react-router-dom";
-import { toast } from "react-toastify";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
@@ -58,7 +57,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="">
+    <nav className="sticky top-0 left-0 z-50 w-full bg-white shadow-md">
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">

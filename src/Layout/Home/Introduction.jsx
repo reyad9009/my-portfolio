@@ -25,7 +25,7 @@ const Introduction = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/tarek.rahman.483355"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 text-4xl hover:scale-110 transition-transform duration-200"

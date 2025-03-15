@@ -7,11 +7,11 @@ const SecondDetails = () => {
     <div className="w-11/12 mx-auto p-8">
       {/* Project Title */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold">Language Exchange - Learn Language in a Friendly Atmosphere</h1>
+        <h1 className="text-4xl font-bold">Fradel-and-Spies - A Restaurant Management System</h1>
       </div>
 
       {/* Main Technology Stack */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Main Technology Stack Used</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
           <li><strong>Frontend:</strong> React, React Router, Tailwind CSS, DaisyUI, React Awesome Reveal, React Tooltip</li>
@@ -22,20 +22,17 @@ const SecondDetails = () => {
       </div>
 
       {/* Brief Description */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Brief Description</h2>
         <p className="mt-4 text-gray-700">
-          Language Exchange is an online tutor booking platform designed to connect users with tutors from various languages and subjects.
-          The platform offers a seamless way to search for tutors, book sessions, and manage tutor profiles. Key features include browsing language categories,
-          booking tutorials, adding new tutorials, and reviewing tutors. With secure user authentication via Firebase and JWT, the platform ensures a safe
-          and personalized learning experience. The application is fully responsive and user-friendly, promoting accessible global learning.
+        The Restaurant Management Website is a full-stack project built using the MERN stack to streamline restaurant operations. It includes user authentication, food listing, purchase functionality, order management, and an interactive gallery. Key features include secure authentication (JWT, Firebase), a responsive UI, food search and filtering, pagination, and theme customization. The project follows best practices for security, deployment, and performance optimization, ensuring a smooth experience for both customers and administrators.
         </p>
       </div>
 
       {/* Live Project Link */}
       <div className="mb-8">
         <h2 className="text-xl font-semibold">Live Project Link:-</h2>
-        <a href="https://lingua-connect.netlify.app" className="text-blue-500 flex items-center mt-4">
+        <a href="https://assignment-11-b5583.web.app/" className="text-blue-500 flex items-center mt-4">
           <FaLink className="mr-2" />
           View Live Project
         </a>
@@ -44,33 +41,43 @@ const SecondDetails = () => {
       {/* GitHub Repository Link */}
       <div className="mb-8">
         <h2 className="text-xl font-semibold">GitHub Repository Link (Client):-</h2>
-        <a href="https://github.com/pgrmrmortuja/language-exchange-client" className="text-blue-500 flex items-center mt-4">
+        <a href="https://github.com/reyad9009/Fradel-and-Spies" className="text-blue-500 flex items-center mt-4">
           <FaGithub className="mr-2" />
           View GitHub Repository
         </a>
       </div>
 
       {/* Challenges Faced */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-xl font-semibold text-gray-800">Challenges Faced While Developing the Project</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
-          <li><IoMdArrowForward className="inline mr-2" />Complex Authentication: Implementing secure authentication with Firebase, managing JWT tokens, and ensuring private routes worked seamlessly across different pages proved to be challenging.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Dynamic Content Handling: Managing and displaying dynamic content, such as the language category cards and tutor profiles, required efficient data fetching and state management across various components.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Integration of External APIs: Fetching and displaying tutors' data in a responsive and interactive way, while managing backend communication with MongoDB Atlas, posed initial difficulties.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Responsive Design: Ensuring the application remained fully responsive across all devices (desktop, tablet, and mobile) while maintaining a clean and intuitive UI with Tailwind CSS and DaisyUI.</li>
+          <li><IoMdArrowForward className="inline mr-2" />Managing Authentication & Authorization – Implementing secure login, registration, and JWT-based authentication while ensuring protected routes worked smoothly.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Database Security & Environment Variables – Safeguarding MongoDB credentials and Firebase configuration keys using environment variables to prevent security vulnerabilities.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Ensuring Responsive Design – Making sure the website worked seamlessly across mobile, tablet, and desktop devices while maintaining a visually appealing UI.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />State Management & API Handling – Managing real-time data updates and API calls efficiently, especially for search functionality, pagination, and filtering.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Handling Real-Time Data Updates – Updating the purchase count, order status, and user profile dynamically without requiring full page reloads.</li>
         </ul>
       </div>
 
       {/* Potential Improvements */}
-      <div className="bg-green-200 p-6 rounded-lg shadow-md">
+      <div className="bg-[#ceb9ff] p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold text-gray-800">Potential Improvements and Future Plans</h2>
         <ul className="mt-4 text-gray-700 space-y-2">
-          <li><IoMdArrowForward className="inline mr-2" />Pagination: Implement pagination for the tutor listing to improve the user experience, especially when dealing with large amounts of tutor data.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Enhanced Search Functionality: Expand the search feature to include filters like price range, tutor rating, and subjects, improving the ease of finding relevant tutors.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Dark/Light Theme: Implement a dark mode and light mode toggle for better accessibility and to cater to users' preferences.</li>
-          <li><IoMdArrowForward className="inline mr-2" />User Reviews & Ratings: Allow users to leave more detailed reviews and ratings for tutors, with additional fields such as comments or specific areas of expertise.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Multi-Language Support: Add support for multiple languages to cater to a broader user base, especially for non-English speakers.</li>
-          <li><IoMdArrowForward className="inline mr-2" />Mobile App: Transition the platform into a mobile app for both iOS and Android, leveraging React Native to bring the Language Exchange experience to mobile users.</li>
+          <li><IoMdArrowForward className="inline mr-2" />Enhancing UI/UX Design – Improve the color contrast, alignment, and overall design aesthetics to make the platform more appealing to users.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Advanced Filtering & Sorting – Implement multiple filtering options for food items based on price, category, and ratings to improve search functionality.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Real-Time Order Tracking – Introduce live order tracking for customers to monitor their food delivery status in real-time.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />AI-Powered Recommendations – Implement AI-based food recommendations based on user preferences, order history, and trending items.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Performance Optimization – Improve backend queries, implement caching, and optimize API calls for faster data retrieval and a smoother experience.</li>
+
+          <li><IoMdArrowForward className="inline mr-2" />Admin Dashboard for Restaurant Owners – Create an admin panel to manage orders, food inventory, and user activity analytics efficiently.</li>
         </ul>
       </div>
     </div>
